@@ -40,8 +40,8 @@
   - Save the new settings.
   - Restart the VM.
 - [x] Configure VNet peering between two VNets.
-  - Created new Vnet (ml-vnet).
-  - From VNet (mhamed-lehbab-vm-vnet), I peered the (ml-vnet).
+  - Created new Vnet ```ml-vnet```.
+  - From VNet ```mhamed-lehbab-vm-vnet```, I peered the ```ml-vnet```.
   </details>
 
 ---
@@ -81,10 +81,10 @@
 - [x] Create a Storage Account with different replication options.
 - [x] Upload and manage blobs using Azure Portal and Azure CLI.
   - From Portal.
-    - Created a container (mycontainer).
+    - Created a container ```mycontainer```.
     - Uploaded a Blob. (See screenshot above Uploaded a blob).
   - From CLI.
-    - Created a container (mycontainer2).
+    - Created a container ```mycontainer2```.
     - Uploaded a Blob (see screenshot above Uploaded a blob 2).
 - [x] Set up Shared Access Signatures (SAS) for secure access.
   - Generated keys for container etc.
@@ -100,10 +100,18 @@
 </summary>
 
 - [<b>All Screenshots lab 5, sub folder</b>](/lab5/)
-- [ ] Deploy an Azure SQL Database instance.
-- [ ] Configure firewall settings to allow client access.
-- [ ] Import data into the database.
-- [ ] Implement Geo-replication for high availability.
+- [Azure SQL Database intance](/lab5/db_config.png)
+- [Configure firewall](/lab5/config_firewall.png)
+- [Import Data to database](/lab5/import_data_to_db.png)
+- [Database Geo Replica](/lab5/replica.png)
+
+
+- [x] Deploy an Azure SQL Database instance.
+- [x] Configure firewall settings to allow client access.
+- [x] Import data into the database.
+  - Imported ```sample.sql``` to Account Storage Bloc.
+  - [Check the data that's inside database](/lab5/data_in_db.png).
+- [x] Implement Geo-replication for high availability.
 </details>
 
 ---
