@@ -93,3 +93,17 @@
   </details>
 
 ---
+
+<details>
+<summary>
+<b>Lab 5: Implementing Azure SQL Databases</b>
+</summary>
+
+- [<b>All Screenshots lab 5, sub folder</b>](/lab5/)
+- [ ] Deploy an Azure SQL Database instance.
+- [ ] Configure firewall settings to allow client access.
+- [ ] Import data into the database.
+- [ ] Implement Geo-replication for high availability.
+</details>
+
+---
