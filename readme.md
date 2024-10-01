@@ -1,14 +1,11 @@
-
-
 # Todos
 
-<details open>
+<details >
 <summary>
 <b>Lab 1: Creating and Managing Azure Virtual Machines</b>
 </summary>
 
-
-- [All Screenshots lab1, sub folder](/lab1/)
+- [<b>All Screenshots lab1, sub folder</b>](/lab1/)
 - [VM Created **successully**](/lab1/vm_running.png)
 - [Connect to VM via SSH **successully**](/lab1/success_ssh_connection.png)
 - [Install software on the VM **successully**](/lab1/success_install_software.png)
@@ -19,14 +16,14 @@
 - [x] Install software on the VMs and take snapshots.
 </details>
 
-----
+---
 
-<details open>
+<details >
 <summary>
 <b>Lab 2: Implementing Azure Virtual Networks</b>
 </summary>
 
-- [All Screenshots lab2, sub folder](/lab2/)
+- [<b>All Screenshots lab2, sub folder</b>](/lab2/)
 - [VNet created with multiple subnets](/lab2/vnet_dashboard.png)
 - [NGS created](/lab2/ngs_dashboard.png)
 - [Connect the VM to a newly created subnet](/lab2/connect_vm_to_new_subnet.png)
@@ -45,17 +42,17 @@
 - [x] Configure VNet peering between two VNets.
   - Created new Vnet (ml-vnet).
   - From VNet (mhamed-lehbab-vm-vnet), I peered the (ml-vnet).
-</details>
+  </details>
 
-----
+---
 
-<details open>
+<details >
 <summary>
 <b>Lab 3: Deploying Azure App Service Web Apps
 </b>
 </summary>
 
-- [All Screenshots lab3, sub folder](/lab3/)
+- [<b>All Screenshots lab3, sub folder</b>](/lab3/)
 - [Config App Service Plan](/lab3/config_app_service.png)
 - [Web App Dashboard](/lab3/web_app_dashboard.png)
 
@@ -64,7 +61,35 @@
 - [x] Deploy a web application using Azure App Service.
 - [x] Configure custom domains and SSL certificates.
 - [x] Implement deployment slots for staging and production.
-  - Azure doesn't support Deployment Slots for Static Web Apps. 
-</details>
+  - Azure doesn't support Deployment Slots for Static Web Apps.
+  </details>
 
-----
+---
+
+<details >
+<summary>
+<b>Lab 4: Managing Azure Storage Accounts and Blobs</b>
+</summary>
+
+- [<b>All Screenshots lab 4, sub folder</b>](/lab4/)
+- [Storage Account Dashboard](/lab4/storage_account_dashboard.png)
+- [Uploaded a blob](/lab4/uploaded_blob.png)
+- [Uploaded a blob 2](/lab4/uploaded_blob2.png)
+- [SAS config](/lab4/sas_config.png).
+- [Implemented lifecycle managemenet](/lab4/life_cycle_management.png)
+
+- [x] Create a Storage Account with different replication options.
+- [x] Upload and manage blobs using Azure Portal and Azure CLI.
+  - From Portal.
+    - Created a container (mycontainer).
+    - Uploaded a Blob. (See screenshot above Uploaded a blob).
+  - From CLI.
+    - Created a container (mycontainer2).
+    - Uploaded a Blob (see screenshot above Uploaded a blob 2).
+- [x] Set up Shared Access Signatures (SAS) for secure access.
+  - Generated keys for container etc.
+- [x] Implement lifecycle management policies.
+  - Created a rule (TransitionToCool) to delete blobs after 60 days.
+  </details>
+
+---
