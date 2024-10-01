@@ -49,3 +49,22 @@
 
 ----
 
+<details open>
+<summary>
+<b>Lab 3: Deploying Azure App Service Web Apps
+</b>
+</summary>
+
+- [All Screenshots lab3, sub folder](/lab3/)
+- [Config App Service Plan](/lab3/config_app_service.png)
+- [Web App Dashboard](/lab3/web_app_dashboard.png)
+
+- [x] Create an Azure App Service plan.
+  - [The Web app template](https://icy-sand-07d5e9b03.5.azurestaticapps.net/).
+- [x] Deploy a web application using Azure App Service.
+- [x] Configure custom domains and SSL certificates.
+- [x] Implement deployment slots for staging and production.
+  - Azure doesn't support Deployment Slots for Static Web Apps. 
+</details>
+
+----
