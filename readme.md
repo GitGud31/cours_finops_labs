@@ -245,3 +245,32 @@
 - [x] Implement Action Groups for alert notifications.
 
 </details>
+
+---
+
+<details>
+<summary>
+<b>Lab 12: Using Azure Resource Manager (ARM) Templates</b>
+</summary>
+
+- [<b>All Screenshots lab 12, sub folder</b>](/lab12/)
+- 
+
+- [x] Write an ARM template to deploy a multi-tier application.
+  - Template Multi-tier Application. [HERE](/lab12/template.json)
+- [x] Parameterize the template for reusability.
+  ```
+  az deployment group create --resource-group <your-resource-group> --template-file template.json --parameters sqlServerName=mhamed-lehbab-sql-server databaseName=mhamed-lehbab-db webAppName=mhamed-lehbab-fn-app appServicePlanName=SERVICE_APP_NAME adminUsername=USERNAME_HERE adminPassword=PASSWORD_HERE location=central-fr
+
+  ```
+- [x] Deploy resources using the template via Azure CLI.
+    ```
+    az deployment group validate --resource-group <your-resource-group> --template-file template.json --parameters sqlServerName=mhamed-lehbab-sql-server databaseName=mhamed-lehbab-db webAppName=mhamed-lehbab-fn-app appServicePlanName=SERVICE_APP_NAME adminUsername=USERNAME_HERE adminPassword=PASSWORD_HERE location=central-fr
+
+    ```
+- [x] Validate and troubleshoot deployment issues.
+  ```
+  az deployment group validate --resource-group <your-resource-group> --template-file template.json --parameters sqlServerName=mhamed-lehbab-sql-server databaseName=mhamed-lehbab-db webAppName=mhamed-lehbab-fn-app appServicePlanName=SERVICE_APP_NAME adminUsername=USERNAME_HERE adminPassword=PASSWORD_HERE location=central-fr
+
+  ```
+</details>

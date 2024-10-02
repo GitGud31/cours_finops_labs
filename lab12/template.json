@@ -1,0 +1,61 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2024-04-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
+    "resources": [
+        {
+            "type": "Microsoft.Sql/servers",
+            "apiVersion": "2024-06-01-preview",
+            "name": "[parameters('sqlServerName')]",
+            "location": "[parameters('location')]",
+            "properties": {
+                "administratorLogin": "[parameters('adminUsername')]",
+                "administratorLoginPassword": "[parameters('ADMIN_PASSWORD')]",
+                "version": "12.0"
+            }
+        },
+        {
+            "type": "Microsoft.Sql/servers/databases",
+            "apiVersion": "2024-06-01-preview",
+            "name": "[parameters('DATABASE_NAME')]",
+            "dependsOn": [
+                "[resourceId('Microsoft.Sql/servers', parameters('sqlServerName'))]"
+            ],
+            "properties": {
+                "edition": "Standard",
+                "requestedServiceObjectiveName": "S0"
+            }
+        },
+        {
+            "type": "Microsoft.Web/sites",
+            "apiVersion": "2021-01-15",
+            "name": "[parameters('WEB_APP_NAME')]",
+            "location": "[parameters('location')]",
+            "properties": {
+                "serverFarmId": "[resourceId('Microsoft.Web/serverfarms', parameters('appServicePlanName'))]"
+            }
+        }
+    ],
+    "parameters": {
+        "sqlServerName": {
+            "type": "string"
+        },
+        "databaseName": {
+            "type": "string"
+        },
+        "webAppName": {
+            "type": "string"
+        },
+        "appServicePlanName": {
+            "type": "string"
+        },
+        "adminUsername": {
+            "type": "string"
+        },
+        "adminPassword": {
+            "type": "secureString"
+        },
+        "location": {
+            "type": "string"
+        }
+    }
+}
