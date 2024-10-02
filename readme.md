@@ -254,7 +254,6 @@
 </summary>
 
 - [<b>All Screenshots lab 12, sub folder</b>](/lab12/)
-- 
 
 - [x] Write an ARM template to deploy a multi-tier application.
   - Template Multi-tier Application. [HERE](/lab12/template.json)
@@ -273,4 +272,40 @@
   az deployment group validate --resource-group <your-resource-group> --template-file template.json --parameters sqlServerName=mhamed-lehbab-sql-server databaseName=mhamed-lehbab-db webAppName=mhamed-lehbab-fn-app appServicePlanName=SERVICE_APP_NAME adminUsername=USERNAME_HERE adminPassword=PASSWORD_HERE location=central-fr
 
   ```
+</details>
+
+--- 
+
+<details>
+<summary>
+<b>Lab 13: Implementing Azure Key Vault</b>
+</summary>
+
+- [<b>All Screenshots lab 13, sub folder</b>](/lab13/)
+- [Key vault dashboard](/lab13/key_vault_dashboard.png)
+
+
+- [x] Create an Azure Key Vault.
+- [x] Store and retrieve secrets, keys, and certificates.
+- [x] Integrate Key Vault with an application for secret management.
+- [x] Set up access policies and monitoring.
+- [x] Try to use one of your key inside an application.
+
+</details>
+
+---
+
+<details>
+<summary>
+<b>Lab 14: Configuring Azure DNS and Custom Domains</b>
+</summary>
+
+- [<b>All Screenshots lab 14, sub folder</b>](/lab14/)
+- [Dns dashboard](/lab14/dns_dashboard.png)
+- [Dns Record](/lab14/dns_records.png)
+
+- [x] Create an Azure DNS Zone.
+- [x] Manage DNS records for a custom domain.
+- [x] Configure domain verification and mapping for Azure services.
+- [x] Implement DNS aliases (CNAME) and record sets.
 </details>
