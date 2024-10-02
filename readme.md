@@ -205,3 +205,24 @@
   - Added entpoint to monitor traffic.
 - [x] Test failover scenarios.
 </details>
+
+---
+
+<details>
+<summary>
+<b>Lab 10: Configuring Azure Backup and Recovery Services</b>
+</summary>
+
+- [<b>All Screenshots lab 10, sub folder</b>](/lab10/)
+- [Vault dashboard](/lab10/vault_dashboard.png)
+- [Backup](/lab10/backup_vm.png)
+- [VM policy](/lab10/vm_policy.png)
+
+- [x] Create a Recovery Services Vault.
+- [x] Configure backup for VMs and Azure Files.
+- [x] Perform a backup and restore operation.
+  - Backed up my VM Linux machine.
+- [x] Implement backup policies and retention.
+  - Select policy type. In my case ```vm policy```.
+  - Config VM Policy ```mhamed-vm-policy```.
+</details>
