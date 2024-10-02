@@ -101,6 +101,7 @@
 
 - [<b>All Screenshots lab 5, sub folder</b>](/lab5/)
 - [Azure SQL Database intance](/lab5/db_config.png)
+- [Connected to Database](/lab5/connect_to_td.png)
 - [Configure firewall](/lab5/config_firewall.png)
 - [Import Data to database](/lab5/import_data_to_db.png)
 - [Database Geo Replica](/lab5/replica.png)
@@ -176,4 +177,22 @@
   - Run the ```node index.js``` command. 
   - See [Result](/lab8/result.png)
 - [x] Monitor API usage and manage keys.
+</details>
+
+---
+
+<details>
+<summary>
+<b>Lab 9: Implementing Azure Load Balancer and Traffic Manager
+</b>
+</summary>
+
+- [<b>All Screenshots lab 9, sub folder</b>](/lab9/)
+
+- [x] Deploy Azure Load Balancer to distribute traffic across VMs.
+  - Created a second VM ```mhamed-vm2```.
+  -  
+- [ ] Configure health probes and load balancing rules.
+- [ ] Set up Azure Traffic Manager for DNS-based traffic routing.
+- [ ] Test failover scenarios.
 </details>
