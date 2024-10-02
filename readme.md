@@ -188,11 +188,20 @@
 </summary>
 
 - [<b>All Screenshots lab 9, sub folder</b>](/lab9/)
+- [Second vm](/lab9/create_vm2.png)
+- [Loadbalancer dashboard](/lab9/lb_dashboard.png)
+- [Loadbalancing rules](/lab9/lb_rules.png)
+- [Traffic manager](/lab9/trafic_manager.png)
+- [Traffic endpoint monitoring](/lab9/traffic_endpoint.png)
 
 - [x] Deploy Azure Load Balancer to distribute traffic across VMs.
   - Created a second VM ```mhamed-vm2```.
-  -  
-- [ ] Configure health probes and load balancing rules.
-- [ ] Set up Azure Traffic Manager for DNS-based traffic routing.
-- [ ] Test failover scenarios.
+  - Config Load Balancer, frontend ip configuration. [HERE](/lab9/frontend_config.png)
+  - Config Load Balancer, backend pool. [HERE](/lab9/backend_config.png)
+- [x] Configure health probes and load balancing rules.
+  - Created Load balancing rules. ```http-lb-rule``` 
+- [x] Set up Azure Traffic Manager for DNS-based traffic routing.
+  - Created a traffic manager. ```mhamed-traffic-maanger```.
+  - Added entpoint to monitor traffic.
+- [x] Test failover scenarios.
 </details>
