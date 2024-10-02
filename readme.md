@@ -127,10 +127,10 @@
 
 - [<b>All Screenshots lab 6, sub folder</b>](/lab6/)
 
-- [ ] Create and manage users and groups in Azure AD.
-- [ ] Configure Multi-Factor Authentication (MFA) for users.
-- [ ] Set up Application Registrations and Service Principals.
-- [ ] Implement Conditional Access policies.
+- [x] Create and manage users and groups in Azure AD.
+- [x] Configure Multi-Factor Authentication (MFA) for users.
+- [] Set up Application Registrations and Service Principals.
+- [x ] Implement Conditional Access policies.
 
 </details>
 
@@ -308,4 +308,23 @@
 - [x] Manage DNS records for a custom domain.
 - [x] Configure domain verification and mapping for Azure services.
 - [x] Implement DNS aliases (CNAME) and record sets.
+</details>
+
+---
+
+<details>
+<summary>
+<b>Lab 15: Implementing Azure DevOps for CI/CD Pipelines</b>
+</summary>
+
+*** NOTICE ***
+
+<b>Lab 6: School account is restricted.</b>
+
+- [<b>All Screenshots lab 15, sub folder</b>](/lab15/)
+
+- [x] Set up an Azure DevOps organization and project.
+- [x] Create a Git repository and commit code.
+- [x] Configure a CI pipeline to build the application.
+- [x] Set up a CD pipeline to deploy an app template to Azure App Service.
 </details>
