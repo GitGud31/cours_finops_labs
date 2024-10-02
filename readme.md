@@ -226,3 +226,22 @@
   - Select policy type. In my case ```vm policy```.
   - Config VM Policy ```mhamed-vm-policy```.
 </details>
+
+---
+
+<details>
+<summary>
+<b>Lab 11: Implementing Azure Monitor and Alerts</b>
+</summary>
+
+- [<b>All Screenshots lab 11, sub folder</b>](/lab11/)
+- [VM Monitoring](/lab11/vm_monitoring.png)
+- [All Group Monitoring](/lab11/group_monitoring.png)
+- [Alerts Monitoring](/lab11/alerts_monitoring.png)
+
+- [x] Set up Azure Monitor to collect metrics and logs.
+- [x] Create alerts based on resource metrics.
+- [x] Visualize data using Azure dashboards.
+- [x] Implement Action Groups for alert notifications.
+
+</details>
