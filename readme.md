@@ -155,3 +155,25 @@
 - [x] Monitor function performance and logs.
 
 </details>
+
+---
+
+<details>
+<summary>
+<b>Lab 8: Using Azure Cognitive Services</b>
+</summary>
+
+- [<b>All Screenshots lab 8, sub folder</b>](/lab8/)
+- [Azure Cognitive Services resource](/lab8/azure_ai_service.png)
+
+
+- [x] Create a Cognitive Services resource.
+- [x] Develop an application that uses the Text Analytics API.
+  - Use ```Language``` model.
+  - Create a [nodejs app](/lab8/text-analitycs-app/) 
+  - Use your ```keys``` and ```endpoints```.
+- [x] Analyze sentiment and key phrases from sample text.
+  - Run the ```node index.js``` command. 
+  - See [Result](/lab8/result.png)
+- [x] Monitor API usage and manage keys.
+</details>
