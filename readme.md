@@ -32,6 +32,40 @@
 
 </details>
 
+--- 
+
+<details>
+<summary>
+<b>TP3: Create a Serverless API</b>
+</summary>
+
+- [Create Resource Group](/tp3/screenshots/resource_grp.png)
+- Create Cosmos DB Account. 
+```
+az cosmosdb create --name mhameddbaccount --resource-group mhamedresourcegrp --kind GlobalDocumentDB --default-consistency-level Session
+```
+- Create a Database and Collection
+```
+az cosmosdb sql database create --account-name mhamedaccountdb --resource-group mhamed-tp-grp --name usersdb
+
+az cosmosdb sql container create --account-name mhamedaccountdb --resource-group mhamed-tp-grp --database-name usersdb --name users --partition-key-path "/id"
+```
+- Create Function App.
+```
+mkdir myfunc
+cd myfunc
+
+func init --javascript
+```
+- Create the Function API. [Directory](/tp3/screenshots/setup.png).
+```
+func new --name crudApi --template "HTTP trigger"
+```
+- [Publish Function App](/tp3/screenshots/publish.png)
+- [POST REQUEST](/tp3/screenshots/result_post.png)
+
+</details>
+
 ---
 ---
 ---
