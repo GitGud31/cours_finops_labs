@@ -17,11 +17,24 @@
 
 <details>
 <summary>
-<b>TP2: Deploy a Simple HTTP-triggered Cloud Function</b>
+<b>TP2: Data Storage Integration - build a mini pipeline</b>
 </summary>
 
 - [<b>All Screenshots tp2, sub folder</b>](/tp2/screenshots/)
+- [Create Storage Account](/tp2/screenshots/create_storage_account.png)
+- [Create App Function](/tp2/screenshots/app_func.png)
+- [Create Container](/tp2/screenshots/local_func.png)
+- [Logs Js Code](/tp2/screenshots/code.png)
+- [Publish App Function](/tp2/screenshots/publish.png)
+- [HTTPS POST TRIGGER](/tp2/screenshots/postman_post.png)
+- [Saved log in Blob](/tp2/screenshots/saved_log.png)
+- [Download log file](/tp2/screenshots/saved_log.png). [file](/tp2/log_123_1727963962038.json)
 
+</details>
+
+---
+---
+---
 ---
 ---
 
