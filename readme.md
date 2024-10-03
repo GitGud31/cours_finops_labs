@@ -353,3 +353,53 @@
 - [x] Audit access using activity logs.
 
 </details>
+
+---
+
+<details>
+<summary>
+<b>Lab 17: Implementing Azure Policy and Governance</b>
+</summary>
+
+- [<b>All Screenshots lab 17, sub folder</b>](/lab17/)
+- [Create and assign Azure Policies](/lab17/policy.png)
+- [Used initiative defitions to group multiple policies](/lab17/init_definitions.png)
+
+
+- [x] Create and assign Azure Policies to enforce compliance.
+
+  - Create a custom Policy ```m-lehbab-policy```.
+
+  ```
+  az login 
+
+  az policy assignment create \
+  --name "AllowedLocations" \
+  --policy "/providers/Microsoft.Authorization/policyDefinitions/<policy_id>" \
+  --params '{"allowedLocations": {"value": ["Central France", "FR"]}}' \
+  --scope "/subscriptions/SUBSCRIPTION_ID_HERE"
+  ```
+- [x] Use initiatives to group multiple policies.
+  - Create initiative definitions ```mhamed-init-definitions```.
+  
+  ```
+  az login 
+
+  az policy set-definition create \
+  --name "SecureInitiative" \
+  --definitions '[{"policyDefinitionId": "/providers MicrosoftAuthorization/policyDefinitions/POLICY_ID_1_HERE"},{"policyDefinitionId": "/providers/Microsoft.Authorization/policyDefinitions/POLICY_ID_2_HERE"}]' \
+  --params '{"allowedLocations": {"value": ["Central France", "FR"]}}'
+
+  ```
+  
+- [x] Remediate non-compliant resources.
+  
+  ```
+  az login 
+
+  az policy state list --query "[?isCompliant==`false`].{resource:resourceId}" --policy-assignment "POLICY_ASSIGNMENT_ID_HERE"
+
+  ```
+- [x] Analyze compliance reports.
+
+</details>
