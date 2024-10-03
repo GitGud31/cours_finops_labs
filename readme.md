@@ -1,4 +1,20 @@
-# Todos
+# TPs
+<details>
+<summary>
+<b>TP1: Deploy a Simple HTTP-triggered Cloud Function</b>
+</summary>
+- [<b>All Screenshots tp1, sub folder</b>](/tp1/)
+
+</details>
+
+- Create Function [mhamedHttpFunc](/tp1/screenshots/create_func.png)
+- Deploy Function [successfull](/tp1/screenshots/dploy.png)
+- Result on Azure Portal [Dashboard](/tp1/screenshots/result.png)
+
+---
+---
+
+# LABs
 
 <details >
 <summary>
