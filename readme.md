@@ -328,3 +328,28 @@
 - [x] Configure a CI pipeline to build the application.
 - [x] Set up a CD pipeline to deploy an app template to Azure App Service.
 </details>
+
+---
+
+<details>
+<summary>
+<b>Lab 16: Managing Role-Based Access Control (RBAC)</b>
+</summary>
+
+- [<b>All Screenshots lab 16, sub folder</b>](/lab16/)
+- [Role assignment From Azure Portal](/lab16/role_assignment.png)
+  or ```using CLI```
+  ```
+  az login 
+
+  az role assignment create --assignee USER_EMAIL --role Reader --scope RESOURCE_GROUP_NAME
+  ```
+- [Custom Role with specific persmissions](/lab16/custom_role.png)
+- [Audit activity logs](/lab16/activity_log.png)
+
+- [x] Assign built-in roles to users and groups.
+- [x] Create custom roles with specific permissions.
+- [x] Test access levels for different roles.
+- [x] Audit access using activity logs.
+
+</details>
