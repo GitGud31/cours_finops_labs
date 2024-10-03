@@ -1,15 +1,26 @@
 # TPs
+
 <details>
 <summary>
 <b>TP1: Deploy a Simple HTTP-triggered Cloud Function</b>
 </summary>
-- [<b>All Screenshots tp1, sub folder</b>](/tp1/)
+
+- [<b>All Screenshots tp1, sub folder</b>](/tp1/screenshots/)
+- Create Function [mhamedHttpFunc](/tp1/screenshots/create_func.png)
+- Deploy Function [successfull](/tp1/screenshots/deploy.png)
+- Result on Azure Portal [Dashboard](/tp1/screenshots/result.png)
+- Function on the [browser](/tp1/screenshots/proof.png)
 
 </details>
 
-- Create Function [mhamedHttpFunc](/tp1/screenshots/create_func.png)
-- Deploy Function [successfull](/tp1/screenshots/dploy.png)
-- Result on Azure Portal [Dashboard](/tp1/screenshots/result.png)
+--- 
+
+<details>
+<summary>
+<b>TP2: Deploy a Simple HTTP-triggered Cloud Function</b>
+</summary>
+
+- [<b>All Screenshots tp2, sub folder</b>](/tp2/screenshots/)
 
 ---
 ---
@@ -501,10 +512,10 @@
   ```
 
 - [x] Deploy a containerized application using Kubernetes manifests.
-  - [Deployement](/lab20/deply.yaml) ```script```
-  - [Services](/lab20/service.yaml) ```script```
+  - [Deployement](/lab20/deply.yaml) `script`
+  - [Services](/lab20/service.yaml) `script`
 - [x] Scale applications and manage pods.
-  - [Auto scaling](/lab20/scalin.yaml) ```script```
+  - [Auto scaling](/lab20/scalin.yaml) `script`
 - [x] Implement network policies for pod communication.
 
 </details>
