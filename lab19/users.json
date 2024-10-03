@@ -1,0 +1,36 @@
+[
+    {
+        "id": "1",
+        "name": "Mhamed LEHBAB",
+        "email": "mhamed.l@example.com",
+        "age": 29,
+        "address": {
+            "street": "123 Maple St",
+            "city": "New York",
+            "state": "NY",
+            "zip": "10001"
+        },
+        "hobbies": [
+            "reading",
+            "travelling",
+            "cooking"
+        ]
+    },
+    {
+        "id": "2",
+        "name": "Bob Smith",
+        "email": "bob.smith@example.com",
+        "age": 35,
+        "address": {
+            "street": "456 Oak St",
+            "city": "San Francisco",
+            "state": "CA",
+            "zip": "94101"
+        },
+        "hobbies": [
+            "hiking",
+            "gaming",
+            "photography"
+        ]
+    }
+]

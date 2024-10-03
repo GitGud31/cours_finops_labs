@@ -425,3 +425,22 @@
 - [x] Connect to the virtual desktops as a user.
 
 </details>
+
+---
+
+<details>
+<summary>
+<b>Lab 19: Implementing Azure Cosmos DB</b>
+</summary>
+
+- [<b>All Screenshots lab 19, sub folder</b>](/lab19/)
+- [Create cosmos DB](/lab19/cosmos_db.png)
+- [Data Explorer](/lab19/data-explorer.png)
+
+- [x] Create a Cosmos DB account with a chosen API (SQL, MongoDB, etc.).
+- [x] Insert and query data using the Data Explorer.
+- [x] Configure throughput and partitioning.
+- [ ] Implement Global Distribution.
+  - I'm on [serverless](/lab19/serverless.png) mode. I cannot do this part.
+
+</details>
