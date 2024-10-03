@@ -149,9 +149,9 @@
 - [x] Create an Azure Function App.
 - [x] Develop a serverless function triggered by an HTTP request.
   - From available Templates.
-  - Create HTTP trigger function ```HttpTrigger1```. 
+  - Create HTTP trigger function `HttpTrigger1`.
 - [x] Integrate the function with Azure Storage or Azure Queue.
-  - install storage-blob ```npm install @azure/storage-blob```.
+  - install storage-blob `npm install @azure/storage-blob`.
   - Modify the function code to [this](/lab7/index.js).
 - [x] Monitor function performance and logs.
 
@@ -167,14 +167,13 @@
 - [<b>All Screenshots lab 8, sub folder</b>](/lab8/)
 - [Azure Cognitive Services resource](/lab8/azure_ai_service.png)
 
-
 - [x] Create a Cognitive Services resource.
 - [x] Develop an application that uses the Text Analytics API.
-  - Use ```Language``` model.
-  - Create a [nodejs app](/lab8/text-analitycs-app/) 
-  - Use your ```keys``` and ```endpoints```.
+  - Use `Language` model.
+  - Create a [nodejs app](/lab8/text-analitycs-app/)
+  - Use your `keys` and `endpoints`.
 - [x] Analyze sentiment and key phrases from sample text.
-  - Run the ```node index.js``` command. 
+  - Run the `node index.js` command.
   - See [Result](/lab8/result.png)
 - [x] Monitor API usage and manage keys.
 </details>
@@ -195,13 +194,13 @@
 - [Traffic endpoint monitoring](/lab9/traffic_endpoint.png)
 
 - [x] Deploy Azure Load Balancer to distribute traffic across VMs.
-  - Created a second VM ```mhamed-vm2```.
+  - Created a second VM `mhamed-vm2`.
   - Config Load Balancer, frontend ip configuration. [HERE](/lab9/frontend_config.png)
   - Config Load Balancer, backend pool. [HERE](/lab9/backend_config.png)
 - [x] Configure health probes and load balancing rules.
-  - Created Load balancing rules. ```http-lb-rule``` 
+  - Created Load balancing rules. `http-lb-rule`
 - [x] Set up Azure Traffic Manager for DNS-based traffic routing.
-  - Created a traffic manager. ```mhamed-traffic-maanger```.
+  - Created a traffic manager. `mhamed-traffic-maanger`.
   - Added entpoint to monitor traffic.
 - [x] Test failover scenarios.
 </details>
@@ -223,9 +222,9 @@
 - [x] Perform a backup and restore operation.
   - Backed up my VM Linux machine.
 - [x] Implement backup policies and retention.
-  - Select policy type. In my case ```vm policy```.
-  - Config VM Policy ```mhamed-vm-policy```.
-</details>
+  - Select policy type. In my case `vm policy`.
+  - Config VM Policy `mhamed-vm-policy`.
+  </details>
 
 ---
 
@@ -258,23 +257,29 @@
 - [x] Write an ARM template to deploy a multi-tier application.
   - Template Multi-tier Application. [HERE](/lab12/template.json)
 - [x] Parameterize the template for reusability.
+
   ```
   az deployment group create --resource-group <your-resource-group> --template-file template.json --parameters sqlServerName=mhamed-lehbab-sql-server databaseName=mhamed-lehbab-db webAppName=mhamed-lehbab-fn-app appServicePlanName=SERVICE_APP_NAME adminUsername=USERNAME_HERE adminPassword=PASSWORD_HERE location=central-fr
 
   ```
-- [x] Deploy resources using the template via Azure CLI.
-    ```
-    az deployment group validate --resource-group <your-resource-group> --template-file template.json --parameters sqlServerName=mhamed-lehbab-sql-server databaseName=mhamed-lehbab-db webAppName=mhamed-lehbab-fn-app appServicePlanName=SERVICE_APP_NAME adminUsername=USERNAME_HERE adminPassword=PASSWORD_HERE location=central-fr
 
-    ```
-- [x] Validate and troubleshoot deployment issues.
+- [x] Deploy resources using the template via Azure CLI.
+
   ```
   az deployment group validate --resource-group <your-resource-group> --template-file template.json --parameters sqlServerName=mhamed-lehbab-sql-server databaseName=mhamed-lehbab-db webAppName=mhamed-lehbab-fn-app appServicePlanName=SERVICE_APP_NAME adminUsername=USERNAME_HERE adminPassword=PASSWORD_HERE location=central-fr
 
   ```
-</details>
 
---- 
+- [x] Validate and troubleshoot deployment issues.
+
+  ```
+  az deployment group validate --resource-group <your-resource-group> --template-file template.json --parameters sqlServerName=mhamed-lehbab-sql-server databaseName=mhamed-lehbab-db webAppName=mhamed-lehbab-fn-app appServicePlanName=SERVICE_APP_NAME adminUsername=USERNAME_HERE adminPassword=PASSWORD_HERE location=central-fr
+
+  ```
+
+  </details>
+
+---
 
 <details>
 <summary>
@@ -283,7 +288,6 @@
 
 - [<b>All Screenshots lab 13, sub folder</b>](/lab13/)
 - [Key vault dashboard](/lab13/key_vault_dashboard.png)
-
 
 - [x] Create an Azure Key Vault.
 - [x] Store and retrieve secrets, keys, and certificates.
@@ -317,7 +321,7 @@
 <b>Lab 15: Implementing Azure DevOps for CI/CD Pipelines</b>
 </summary>
 
-*** NOTICE ***
+**_ NOTICE _**
 
 <b>Lab 6: School account is restricted.</b>
 
@@ -338,12 +342,14 @@
 
 - [<b>All Screenshots lab 16, sub folder</b>](/lab16/)
 - [Role assignment From Azure Portal](/lab16/role_assignment.png)
-  or ```using CLI```
+  or `using CLI`
+
   ```
-  az login 
+  az login
 
   az role assignment create --assignee USER_EMAIL --role Reader --scope RESOURCE_GROUP_NAME
   ```
+
 - [Custom Role with specific persmissions](/lab16/custom_role.png)
 - [Audit activity logs](/lab16/activity_log.png)
 
@@ -365,13 +371,12 @@
 - [Create and assign Azure Policies](/lab17/policy.png)
 - [Used initiative defitions to group multiple policies](/lab17/init_definitions.png)
 
-
 - [x] Create and assign Azure Policies to enforce compliance.
 
-  - Create a custom Policy ```m-lehbab-policy```.
+  - Create a custom Policy `m-lehbab-policy`.
 
   ```
-  az login 
+  az login
 
   az policy assignment create \
   --name "AllowedLocations" \
@@ -379,11 +384,13 @@
   --params '{"allowedLocations": {"value": ["Central France", "FR"]}}' \
   --scope "/subscriptions/SUBSCRIPTION_ID_HERE"
   ```
+
 - [x] Use initiatives to group multiple policies.
-  - Create initiative definitions ```mhamed-init-definitions```.
-  
+
+  - Create initiative definitions `mhamed-init-definitions`.
+
   ```
-  az login 
+  az login
 
   az policy set-definition create \
   --name "SecureInitiative" \
@@ -391,15 +398,16 @@
   --params '{"allowedLocations": {"value": ["Central France", "FR"]}}'
 
   ```
-  
+
 - [x] Remediate non-compliant resources.
-  
+
   ```
-  az login 
+  az login
 
   az policy state list --query "[?isCompliant==`false`].{resource:resourceId}" --policy-assignment "POLICY_ASSIGNMENT_ID_HERE"
 
   ```
+
 - [x] Analyze compliance reports.
 
 </details>
@@ -414,7 +422,6 @@
 - [<b>All Screenshots lab 18, sub folder</b>](/lab18/)
 - [Host pool](/lab18/host_pool.png)
 - [Config VM pools](/lab18/config_vm_pools.png)
-
 
 - [x] Set up Azure Virtual Desktop environment.
   ```
@@ -442,5 +449,46 @@
 - [x] Configure throughput and partitioning.
 - [ ] Implement Global Distribution.
   - I'm on [serverless](/lab19/serverless.png) mode. I cannot do this part.
+
+</details>
+
+---
+
+<details>
+<summary>
+<b>Lab 20: Deploying Azure Kubernetes Service (AKS)</b>
+</summary>
+
+- [<b>All Screenshots lab 20, sub folder</b>](/lab20/)
+- [ASK Cluster](/lab20/aks-cluster.png)
+- [Deployed containerized app](/lab20/deployed-ask.png)
+- [Check running services](/lab20/check.png)
+
+- [x] Set up an AKS cluster.
+
+  ```
+  az upgrade
+
+  az group create --name mhamed-lehbab-labs --location europe
+
+  az aks create \
+  --resource-group mhamed-lehbab-labs \
+  --name mhamed-ask-cluster \
+  --node-count 1 \
+  --enable-addons monitoring \
+  --kubernetes-version 1.24.9 \
+  --generate-ssh-keys
+
+  az aks get-credentials --resource-group mhamed-lehbab-labs --name mhamed-ask-cluster
+
+  kubectl get nodes
+  ```
+
+- [x] Deploy a containerized application using Kubernetes manifests.
+  - [Deployement](/lab20/deply.yaml) ```script```
+  - [Services](/lab20/service.yaml) ```script```
+- [x] Scale applications and manage pods.
+  - [Auto scaling](/lab20/scalin.yaml) ```script```
+- [x] Implement network policies for pod communication.
 
 </details>
