@@ -403,3 +403,25 @@
 - [x] Analyze compliance reports.
 
 </details>
+
+---
+
+<details>
+<summary>
+<b>Lab 18: Configuring Azure Virtual Desktop</b>
+</summary>
+
+- [<b>All Screenshots lab 18, sub folder</b>](/lab18/)
+- [Host pool](/lab18/host_pool.png)
+- [Config VM pools](/lab18/config_vm_pools.png)
+
+
+- [x] Set up Azure Virtual Desktop environment.
+  ```
+  az desktopvirtualization hostpool create     --resource-group mhamed-lehbab-labs     --name mhamed-host-pool     --location "West Europe"     --friendly-name "M'hamed Host Pool Lab18"     --description "Host Pool for Azure Virtual Desktop Lab"
+  ```
+- [x] Configure host pools, session hosts, and workspaces.
+- [x] Publish remote desktop applications.
+- [x] Connect to the virtual desktops as a user.
+
+</details>
